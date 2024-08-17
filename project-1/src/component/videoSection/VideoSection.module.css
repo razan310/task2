@@ -105,7 +105,7 @@
   text-align: left;
 }
 
-/* استعلام الوسائط لتغيير العرض على الشاشات الصغيرة */
+
 @media (max-width: 768px) {
   .stats {
     flex-direction: column; /* ترتيب العناصر عمودياً */
