@@ -1,7 +1,7 @@
 
 import styles from './VideoSection.module.css';
-import videoThumbnail from './../../assets/images/video-frame.jpg'; // استبدل بهذا المسار الحقيقي
-import videoBackground from '/Users/macbookpro/Downloads/1.jpeg'; // استبدل بهذا المسار الحقيقي
+import videoThumbnail from './../../assets/images/video-frame.jpg'; 
+import videoBackground from '/Users/macbookpro/Downloads/1.jpeg'; 
 
 const VideoSection = () => {
   return (
