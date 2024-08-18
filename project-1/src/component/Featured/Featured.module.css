@@ -1,0 +1,192 @@
+/* Container */
+.propertyCard {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  gap: 10px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Image Section */
+.propertyImageContainer {
+  width: 100%;
+  position: relative;
+}
+
+.propertyImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  position: relative;
+  transform: translate(0%, -10%); 
+}
+
+.propertyImageIconContainer {
+  background-color: #d9534f;
+  border-radius: 50%;
+  width: 30%;
+  position: absolute;
+  bottom: 0; /* Bottom edge of the image */
+  left: 0;   /* Left edge of the image */
+  transform: translate(-50%, 3%); /* Adjust to position inside the image */
+}
+
+.propertyImageIcon {
+  padding: 20%;
+}
+
+/* Text Content Section */
+.propertyDetails {
+  text-align: left;
+  position: relative;
+}
+
+.featured {
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.propertyDetailsDiv {
+  background-color: rgb(250, 250, 250);
+  border-radius: 5%;
+  margin: 1%;
+  padding: 20px;
+}
+
+.hrstyle {
+  border: none;          
+  height: 1px;           
+  background-color: rgb(219, 221, 222); 
+  width: 100%;            
+  margin: 20px auto; 
+}
+
+.bestLinksTitle {
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.bestLinks {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.bestLinks .span_1 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.bestLinks .span_2 {
+  font-size: 16px;
+  color: royalblue;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.linksList li {
+  font-size: 17px;
+  color: #202020;
+  margin-bottom: 10px;
+}
+
+/* Icon Section */
+.propertyIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  align-items: center;
+  
+}
+
+.iconCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.iconImage {
+  width: 40px;
+  height: 40px;
+  margin-top: 0px;
+
+}
+
+.iconCard p {
+  display: contents;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+
+}
+.iconCard p span{
+  display: contents;
+  margin: 0;
+  font-size: 10px;
+  color: rgb(200, 202, 203);;
+  text-align: left;
+
+}
+.propertyIconsline{
+  border: none;          /* إزالة الحدود الافتراضية */
+  height: 1px;           /* سمك الخط */
+  background-color:rgb(219, 221, 222); /* لون الخط */
+  width: 75%;            /* عرض الخط */
+  margin: 10px auto;     /* محاذاة الخط إلى الوسط مع إضافة مسافة فوق وتحت */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .propertyCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .propertyImage {
+    width: 100%;
+  }
+
+  .propertyImageIconContainer {
+    width: 20%;
+    transform: translate(-50%, 23%);
+  }
+
+  .propertyDetails {
+    text-align: center;
+  }
+
+  .propertyDetailsDiv {
+    padding: 20px;
+  }
+
+  .linksList li {
+    font-size: 16px;
+  }
+}
